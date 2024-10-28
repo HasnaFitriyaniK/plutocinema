@@ -1,0 +1,149 @@
+/* Navigation.css */
+.navbar-custom {
+  background-color: #212121 !important;
+  color: white;
+  z-index: 1000;
+  position: sticky;
+  top: 0;
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+  color: white;
+  transition: color 0.3s; /* Tambahkan efek transisi */
+}
+
+.navbar-custom .nav-link:hover,
+.navbar-custom .nav-link.active {
+  color: wheat; /* Cream color saat hover atau aktif */
+}
+
+.dropdown-toggle {
+  color: white;
+  position: relative;
+}
+
+.submit {
+  background-color: #525c91;
+  transition: background-color 0.3s; /* Add transition for smooth color change */
+}
+
+.submit.active {
+  background-color: wheat; /* Change color when the button is active */
+}
+
+
+.search-icon {
+  color: white;
+}
+
+/* Remove margin from the second navbar */
+.navbar-custom.mt-2 {
+  margin: 0 !important;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"%3E%3Cpath stroke="%23ffffff" stroke-width="2" d="M5 7h20M5 15h20M5 23h20"/%3E%3C/svg%3E');
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.user-dropdown .dropdown-menu {
+  z-index: 10000000;
+  position: absolute;
+  top: 40px; /* Adjust based on button size */
+  right: 0;
+  margin-right: 7px;
+}
+
+.dropdown-toggle {
+  margin-right: 7px;
+}
+
+.customShowMore .modal-dialog {
+  width: 100vw; /* Full width of the viewport */
+  height: 100vh; /* Full height of the viewport */
+  margin: 0; /* Remove default margin */
+  padding: 0;
+  top: 35px;
+}
+
+
+
+.modal-header {
+  border-bottom: 1px solid #444;
+}
+
+.modal-header .modal-title {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.modal-body {
+  background-color: #1b1b1b;
+  padding: 20px;
+  color: white;
+}
+
+.modal-body .list-group-item {
+  background-color: #1b1b1b;
+  color: white;
+  border: none;
+  padding: 15px 20px;
+  transition: background-color 0.3s, color 0.3s;
+  cursor: pointer;
+}
+
+.modal-body .list-group-item:hover {
+  background-color: #2e2e2e;
+  color: wheat;
+}
+
+.modal-footer {
+  border-top: 1px solid #444;
+  background-color: #1b1b1b;
+}
+
+.modal-footer .btn {
+  background-color: #525c91;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.modal-footer .btn:hover {
+  background-color: #676fa3;
+}
+
+.modal-footer .btn:active {
+  background-color: wheat;
+  color: #212121;
+}
+
+/* Close Button */
+.modal-header .close {
+  color: white;
+  opacity: 0.8;
+}
+
+.modal-header .close:hover {
+  color: wheat;
+  opacity: 1;
+}
+
+
+@media (max-width: 991px) {
+  .navbar-brand {
+    flex-grow: 1;
+    justify-content: center;
+  }
+}
+
+.d-lg-none {
+  display: flex;
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+}

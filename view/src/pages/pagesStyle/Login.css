@@ -1,0 +1,16 @@
+@keyframes scrollText {
+    0% {
+        transform: translateY(0%);
+    }
+    50% {
+        transform: translateY(-65%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+  }
+
+  .form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 50%;
+}
